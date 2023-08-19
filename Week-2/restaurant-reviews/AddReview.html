@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Main Street Cafe Reviews</title>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Review</h1>
+      <nav>
+        <a href="Home.html">Home</a> &nbsp;
+        <a href="AddReview.html">Add Review</a> &nbsp;
+        <a href="About.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+    <h2>Add Review</h2>
+    
+    <form action="submit_review.php" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+
+        <label for="restaurant">Restaurant:</label>
+        <select id="restaurant" name="restaurant">
+            <option value="mainstreetcafe">Main Street Cafe</option>
+            <option value="greekhouse">Greek House</option>
+        </select>
+        <br>
+       
+        <label for="date">Date of Visit:</label>
+        <input type="date" id="date" name="date">
+        <br>
+        
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" value=5 name="rating" min="1" max="5">
+        <br>
+        
+        <label for="details">Details:</label>
+        <textarea id="details" name="details" rows="4" cols="50"></textarea>
+        <br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    </main>
+    <footer>
+        &copy; 2023 Restaurant Reviews
+    </footer>
+</body>
+</html>
