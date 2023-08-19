@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Assingment Social network</title>
+        <style>
+            label {
+                display: inline-block;
+                width: 150px;
+                padding: 10px;
+            }
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                width: 300px;
+                padding: 5px;
+            }
+            textarea {
+                width: 600px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Join a Social network</h1>
+        <form method="post" enctype="multipart/form-data">
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div>
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="about">About you:</label>
+                <textarea id="about" name="about" rows="3" cols="50" required></textarea>
+            </div>
+            <div>
+                <label for="picture">Photo:</label>
+                <input type="file" id="picture" name="picture">
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </body>
+</html>

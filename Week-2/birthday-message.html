@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale" />
+    <title>Assingment birthday-message</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 150px;
+            padding: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 300px;
+            padding: 5px;
+        }
+        textarea {
+            resize: vertical;
+            width: 600px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Happy Birthday Message Creator</h1>
+    <form action="/action_page.php" method="post">
+        <div>
+            <label for="message">Message: </label>
+            <input type="text" id="message" name="message" value="Happy Birthday!" required >
+        </div>
+        <div>
+            <label for="email">Email Address: </label>
+            <input type="text" id="email" name="email" placeholder="name@domain.com" pattern="[a-zA-Z0-9-_.]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0- 9-]+)*" required>
+        </div>
+        <div>
+            <label for="date">Date to send: </label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div>
+            <label for="colour">Message Color</label>
+            <input type="color" id="colour" name="colour" required>
+        </div>
+        <div>
+            <label for="blinks">No of blinks:</label>
+            <input type="number" id="blinks" name="blinks" value=0  max=10 min=0 required>
+        </div>
+        <div>
+            <label for="volume">Music Volume: </label>
+            <input type="range" id="volume" name="volume" value="20" max=50 min=0 required>
+        </div>
+        <div>
+            <button type="submit">Send Birthday Message</button>
+        </div>
+    </form>
+  </body>
+</html>

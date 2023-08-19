@@ -1,0 +1,41 @@
+.main-div {
+    width: 600px;
+    height: 280px;
+    border: 2px solid blue;
+    padding: 5px;
+    background-color: #F0F0F0;
+}
+
+.yesterday-heading {
+    font-size: 16pt;
+    font-family: Arial,
+        sans-serif;
+    font-style: italic;
+    color: blue;
+}
+
+.div1 {
+    float: left;
+    width: 200px;
+    background-color: yellow;
+    padding: 10px;
+    margin: 0 10px 0 0;
+}
+
+.div3 {
+    background-color: orange;
+    position: absolute;
+    top: 200px;
+    left: 110px;
+    width: 200px;
+    padding: 10px;
+}
+
+.div4 {
+    float: right;
+    width: 200px;
+    background-color: rgb(255, 80, 0);
+    color: white;
+    padding: 10px;
+    margin: 20px 40px 0 0;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment starting-lineup</title>
+    <style>
+        .form-group {
+            margin-bottom: 10px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form  method="POST">
+        <div class="form-group">
+            <fieldset>
+                <legend>Status:</legend>
+            <p>
+                <label>
+                    <input type="radio" name="status" value="Draft"> Draft
+                </label>
+                <label>
+                    <input type="radio" name="status" value="Final" checked> Final
+                </label>
+            </p>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <p>
+                <label for="gameDate">Date:</label>
+                <select id="gameDate" name="gameDate">
+                    <option value="2023-03-20">March 20</option>
+                    <option value="2023-03-24">March 24</option>
+                    <option value="2023-04-02">April 2</option>
+                    <option value="2023-04-06">April 6</option>
+                    <option value="2023-04-13">April 13</option>
+                </select>
+            </p>
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend>Players:</legend>
+                <p>
+                    <div>
+                        <label>
+                           <input type="checkbox" name="player" value="Aarav Agarwal"> Aarav Agarwal
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                           <input type="checkbox" name="player" value="Ava Johnson"> Ava Johnson
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="player" value="Julio Ortiz"> Julio Ortiz
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                        <input type="checkbox" name="player" value="Liam Rubio"> Liam Rubio
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                        <input type="checkbox" name="player" value="Emma Witherspoon"> Emma Witherspoon
+                        </label>
+                    </div>   
+                </p>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
