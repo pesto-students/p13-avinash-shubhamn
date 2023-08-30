@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="Script.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Mediterranian Vacations</h1>
+    </header>
+    <nav class="navbar navbar-expand-md">
+      <ul class="navbar-nav col-md">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#featured">Featured Packages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#exotic">Exotic Vacations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#historic">Historic Locations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="benefits" class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="benefit">
+            <img
+              src="data:image/png;base64,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"
+              alt="checkmark"
+              width="25"
+              height="26"
+            />
+            <strong>Affordable!</strong> Our vacation packages give you the most
+            bang for your buck.
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="benefit">
+            <img
+              src="data:image/png;base64,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"
+              alt="checkmark"
+              width="25"
+              height="26"
+            />
+            <strong>Quality!</strong> We use only the finest lodgings and
+            qualified tour guides.
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="benefit">
+            <img
+              src="data:image/png;base64,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"
+              alt="checkmark"
+              width="25"
+              height="26"
+            />
+            <strong>Cancel Anytime!</strong> You may cancel your trip at any
+            time for a full refund.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section id="featured">
+        <h2>Featured Packages</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg">
+              <img
+                class="rounded img-fluid"
+                src="https://assets.editorial.aetnd.com/uploads/2018/01/the-sphinx-gettyimages-1183584133.jpg"
+                alt="Great Sphyinx and pyramid"
+              />
+            </div>
+            <div class="col-lg">
+              <h3>Egpyt</h3>
+              <p>
+                Egpyt is a land of enduring beauty and rich culture. Explore the
+                capital city of <strong>Cairo</strong>, the
+                <strong>Great Pyramids of Giza</strong>, and the iconic
+                <strong>Great Sphinx</strong>!
+              </p>
+              <p>
+                Packages include airfare, lodging, and several guided tours!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="exotic">
+        <h2>Exotic Vacations</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9yUt7LHF6cykIAO2d8aQFVzbYM78igiZtog&usqp=CAU"
+                alt="Arial view of Santorini"
+                width="640"
+                height="350"
+              />
+            </div>
+            <div class="col-lg">
+              <h3>Greece</h3>
+              <p>
+                Enjoy the scenic, peaceful Greek island of
+                <strong>Santorini</strong>. Take a cruise, soak in the sun, and
+                explore the idyllic villages that sit atop the cliffs!
+              </p>
+              <p>Packages include airfare, overnight cruises, and lodging!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="historic">
+        <h2>Historic Locations</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg">
+              <img
+                src="https://c1.wallpaperflare.com/preview/894/115/811/jerusalem-israel-old-town-the-jewish-quarter.jpg"
+                alt="Jerusalem city scape"
+                width="640"
+              />
+            </div>
+            <div class="col-lg">
+              <h3>Israel</h3>
+              <p>
+                Explore Israel's holy city of <strong>Jerusalem</strong>. Visit
+                the <strong>Dome of the Rock</strong>, the
+                <strong>Western Wall</strong>, the
+                <strong>Church of the Holy Sepulchre</strong>, and other iconic
+                sites!
+              </p>
+              <p>
+                Packages include airfare, lodging, and several guided tours!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+          Our team of travel experts is readily available to make your dream
+          vacation a reality!
+        </p>
+        <div id="conf-alert" class="alert alert-success collapse" role="alert">
+          Thank you! We will contact you soon!
+        </div>
+        <p>
+          <button
+            id="send-message-btn"
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#contact-modal"
+          >
+            Send a message
+          </button>
+        </p>
+        <p>Or call us at <a href="tel:1-800-111-2222">1-800-111-2222</a>.</p>
+
+        <div
+          class="modal fade"
+          id="contact-modal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="contact-modal-label"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="contact-modal-label">Contact Us</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="contact-name" class="col-form-label"
+                      >Name?</label
+                    >
+                    <input type="text" class="form-control" id="contact-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-email" class="col-form-label"
+                      >Email?</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="contact-email"
+                      placeholder="email@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-interest" class="col-form-label"
+                      >I'm interested in...</label
+                    >
+                    <select class="form-control" id="contact-interest">
+                      <option>Booking a vacation.</option>
+                      <option>Getting more information.</option>
+                      <option>Checking my vacation's status.</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-dismiss="modal"
+                >
+                  Send message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="mailto:travel@medvacations.com">travel@medvacations.com</a>
+      </p>
+      <p>&copy; 2022 Mediterranian Vacations</p>
+    </footer>
+  </body>
+</html>
