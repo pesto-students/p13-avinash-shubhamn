@@ -7,16 +7,12 @@ function isStrongPassword(password) {
         return false;
     }
 
-    let hasUppercase = false;
-    for (let char of password) {
-        if (char >= 'A' && char <= 'Z') {
-            hasUppercase = true;
-            break;
-        }
-    }
+    if (!/[A-Z]/.test(password)) {
+        return false;
+      }
 
-    return hasUppercase;
+    return true
 }
 
-console.log(isStrongPassword("Qwerty")); 
+console.log(isStrongPassword("Qwertysks")); 
 console.log(isStrongPassword("qwerty123"));
